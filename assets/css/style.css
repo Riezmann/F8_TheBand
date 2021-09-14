@@ -8,11 +8,19 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.5;
 }
 
 /* Common */
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.mt-32 {
+  margin-top: 32px !important;
+}
 
 .row {
   margin-left: -8px;
@@ -65,10 +73,10 @@ html {
 }
 
 #header .mobile-menu-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
 }
 
 #nav {
@@ -186,6 +194,7 @@ html {
 #slider .image-description .description {
   font-size: 15px;
   margin-top: 25px;
+  text-shadow: 0 0 1px #000;
 }
 
 /* End: Slider */
@@ -224,11 +233,11 @@ html {
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 15px;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-#content .member-list {
-  margin-top: 32px;
+#content .members-list {
+  margin-top: 16px;
 }
 
 #content .member-item {
@@ -288,7 +297,7 @@ html {
 /* Begin:Tour Places */
 
 .places-list {
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .place-img {
@@ -447,9 +456,18 @@ html {
 
 /* Begin:Contact */
 .contact-content {
-  margin-top: 48px;
+  margin-top: 32px;
   overflow: hidden;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.contact-info a {
+  color: #0e2cd4;
+  opacity: 0.8;
+}
+
+.contact-info a:hover {
+  opacity: 1.2;
 }
 
 .contact-icon {
@@ -476,6 +494,9 @@ html {
   color: #fff;
   border: none;
   font-weight: 500;
+  font-size: 15px;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .contact-content .submit-btn:hover {
@@ -521,35 +542,77 @@ html {
 }
 
 /* Responsive */
-@media (max-width: 740px) {
+
+/* Tablet */
+@media (max-width: 63.9375em) {
+  .place-buy-btn {
+    padding: 15px 16px;
+  }
+
+  .contact-content {
+    line-height: 2.1;
+  }
+
+  .contact-content .form-control {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .socials-list a {
+    font-size: 32px;
+    margin-left: 16px;
+  }
+
+  .copyright {
+    font-size: 20px;
+  }
+
+  .copyright a {
+    font-size: 20px;
+    padding: 12px 0px;
+    display: inline-block;
+  }
+
+  #nav .subnav a {
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 46.1875em) {
+  .s-mt-8 {
+    margin-top: 8px !important;
+  }
+
+  .s-full-width,
+  .s-col-full {
+    width: 100%;
+  }
+
   #nav {
     display: block;
   }
-
 
   #nav li {
     display: block;
   }
 
-
-
   #nav > li:first-child {
-      display: inline-block;
+    display: inline-block;
   }
 
   #nav li .subnav {
-      position: initial;
-      background-color: #333; 
+    position: initial;
+    background-color: #333;
   }
 
   #nav .subnav a {
-      color: white;
-      line-height:46px;
-      padding: 1px 48px;
+    color: white;
+    line-height: 46px;
+    padding: 1px 48px;
   }
 
   #header {
-      overflow: hidden;
+    overflow: hidden;
   }
 
   #header .search-bar {
@@ -557,7 +620,16 @@ html {
   }
 
   #header .mobile-menu-btn {
-      display: block;
+    display: block;
   }
-}
 
+  .contact-content {
+    font-size:18px;
+  }
+
+  .contact-form {
+    margin-top: 32px;
+  }
+
+
+}
