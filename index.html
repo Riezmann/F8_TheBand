@@ -10,6 +10,12 @@
       rel="stylesheet"
       href="./assets/fonts/themify-icons/themify-icons.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="main">
@@ -72,7 +78,7 @@
           </p>
 
           <div class="row members-list">
-            <div class="col col-3 text-center">
+            <div class="col col-3 s-col-full mt-32 text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/team/bandmember.jpg"
@@ -81,7 +87,7 @@
               />
             </div>
 
-            <div class="col col-3 text-center">
+            <div class="col col-3 s-col-full mt-32 text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/team/bandmember.jpg"
@@ -90,7 +96,7 @@
               />
             </div>
 
-            <div class="col col-3 text-center">
+            <div class="col col-3 s-col-full mt-32 text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/team/bandmember.jpg"
@@ -124,7 +130,7 @@
 
             <!-- Begin:Tour places -->
             <div class="row places-list">
-              <div class="col col-3">
+              <div class="col col-3 s-col-full mt-16">
                 <img
                   src="./assets/img/places/newyork.jpg"
                   alt="New York"
@@ -136,13 +142,15 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="place-buy-btn js-buy-ticket">
+                  <button
+                    class="place-buy-btn js-buy-ticket s-col-full text-center"
+                  >
                     Buy Tickets
                   </button>
                 </div>
               </div>
 
-              <div class="col col-3">
+              <div class="col col-3 s-col-full mt-16">
                 <img
                   src="./assets/img/places/paris.jpg"
                   alt="New York"
@@ -154,13 +162,15 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="place-buy-btn js-buy-ticket">
+                  <button
+                    class="place-buy-btn js-buy-ticket s-col-full text-center"
+                  >
                     Buy Tickets
                   </button>
                 </div>
               </div>
 
-              <div class="col col-3">
+              <div class="col col-3 s-col-full mt-16">
                 <img
                   src="./assets/img/places/sanfran.jpg"
                   alt="New York"
@@ -172,7 +182,9 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="place-buy-btn js-buy-ticket">
+                  <button
+                    class="place-buy-btn js-buy-ticket s-col-full text-center"
+                  >
                     Buy Tickets
                   </button>
                 </div>
@@ -190,15 +202,21 @@
           <h2 class="section-heading">Contact</h2>
           <p class="section-subheading">Fan? Drop a note!</p>
           <div class="row contact-content">
-            <div class="col col-2 no-paddding">
+            <div class="contact-info col col-2 no-paddding s-col-full mt-16">
               <p><i class="contact-icon ti-location-pin"></i>Chicago, US</p>
-              <p><i class="contact-icon ti-mobile"></i>Phone: +00 151515</p>
-              <p><i class="contact-icon ti-email"></i>Email: mail@mail.com</p>
+              <p>
+                <i class="contact-icon ti-mobile"></i
+                >Phone: <a href="tel:+00 151515">+00 151515</a>
+              </p>
+              <p>
+                <i class="contact-icon ti-email"></i
+                >Email: <a href="mailto:mail@mail.com">mail@mail.com</a>
+              </p>
             </div>
-            <div class="col col-2 no-paddding">
+            <div class="col col-2 no-paddding s-col-full mt-32">
               <form action="">
                 <div class="row">
-                  <div class="col col-2">
+                  <div class="col col-2 s-col-full">
                     <input
                       type="text"
                       class="form-control"
@@ -207,7 +225,7 @@
                     />
                   </div>
 
-                  <div class="col col-2">
+                  <div class="col col-2 s-col-full s-mt-8">
                     <input
                       type="email"
                       class="form-control"
@@ -226,7 +244,11 @@
                     />
                   </div>
                 </div>
-                <input type="submit" value="SEND" class="submit-btn" />
+                <input
+                  type="submit"
+                  value="SEND"
+                  class="submit-btn s-full-width"
+                />
               </form>
             </div>
           </div>
@@ -333,7 +355,7 @@
 
       //Auto close mobile menu when clicked
       var menuItems = document.querySelectorAll('#nav > li > a[href *= "#"]');
-      
+
       for (var i = 0; i < menuItems.length; i++) {
         var menuItem = menuItems[i];
 
@@ -348,8 +370,6 @@
           }
         };
       }
-
-
     </script>
   </body>
 </html>
